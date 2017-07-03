@@ -65,8 +65,8 @@
     IE1.temp <- NULL
     aa <-0    
     for(tt in index1){      
-      MMM1 <- c(cbind(1,1,x1,x2)[index1,]%*%THETA[1:4,Z[tt]])
-      MMM0 <- c(cbind(1,0,x1,x2)[index1,]%*%THETA[1:4,Z[tt]])      
+        MMM1 <- c(cbind(1,1,X[,1:2])[index1,]%*%THETA[1:4,Z[tt]])
+      MMM0 <- c(cbind(1,0,X[,1:2])[index1,]%*%THETA[1:4,Z[tt]])
       KNOT <- KNOT.set[,Z[tt]]      
       OMEGA <- (abs(outer(KNOT,KNOT,"-")))^3
       svd.OMEGA <- svd(OMEGA)
@@ -83,8 +83,8 @@
     IE2.temp <- NULL
     aa <-0
     for(tt in index2){
-      MMM1 <- c(cbind(1,1,x1,x2)[index2,]%*%THETA[1:4,Z[tt]])
-      MMM0 <- c(cbind(1,0,x1,x2)[index2,]%*%THETA[1:4,Z[tt]])
+      MMM1 <- c(cbind(1,1,X[,1:2])[index2,]%*%THETA[1:4,Z[tt]])
+      MMM0 <- c(cbind(1,0,X[,1:2])[index2,]%*%THETA[1:4,Z[tt]])
       KNOT <- KNOT.set[,Z[tt]]
       OMEGA <- (abs(outer(KNOT,KNOT,"-")))^3
       svd.OMEGA <- svd(OMEGA)
@@ -103,8 +103,8 @@
     IE3.temp <- NULL
     aa <-0
     for(tt in index3){  
-      MMM1 <- c(cbind(1,1,x1,x2)[index3,]%*%THETA[1:4,Z[tt]])
-      MMM0 <- c(cbind(1,0,x1,x2)[index3,]%*%THETA[1:4,Z[tt]])
+      MMM1 <- c(cbind(1,1,X[,1:2])[index3,]%*%THETA[1:4,Z[tt]])
+      MMM0 <- c(cbind(1,0,X[,1:2])[index3,]%*%THETA[1:4,Z[tt]])
       KNOT <- KNOT.set[,Z[tt]]
       OMEGA <- (abs(outer(KNOT,KNOT,"-")))^3
       svd.OMEGA <- svd(OMEGA)
@@ -121,8 +121,8 @@
     IE4.temp <- NULL
     aa <-0
     for(tt in index4){  
-      MMM1 <- c(cbind(1,1,x1,x2)[index4,]%*%THETA[1:4,Z[tt]])
-      MMM0 <- c(cbind(1,0,x1,x2)[index4,]%*%THETA[1:4,Z[tt]])
+      MMM1 <- c(cbind(1,1,X[,1:2])[index4,]%*%THETA[1:4,Z[tt]])
+      MMM0 <- c(cbind(1,0,X[,1:2])[index4,]%*%THETA[1:4,Z[tt]])
       KNOT <- KNOT.set[,Z[tt]]
       OMEGA <- (abs(outer(KNOT,KNOT,"-")))^3
       svd.OMEGA <- svd(OMEGA)
